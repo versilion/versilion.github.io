@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+    font-family: Calibri, sans-serif;
+    text-align: right;
+}
+
+ul li{
+    display: inline;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 2px solid #474747;
+    border-radius: 5px;
+    width: 30px
+}
