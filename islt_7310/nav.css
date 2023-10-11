@@ -1,45 +1,52 @@
 
 nav ul {
-    font-family: Calibri, sans-serif;
-    float: left;
+    font-family: Trebuchet MS, sans-serif;
+    float: right;
     }
     nav ul li {
-        float: left;
+        float: right;
         list-style: none;
-        position: relative;
+        position: relative; 
     }
 
     nav ul li a {
         display: block;
-        font-family: Calibri, sans serif;
+        font-family: Trebuchet MS, sans-serif;
         color: #39B4FF;
         font-size: 18px;
         line-height: 10px;
         padding: 24px 100px;
-        text-align: left;
+        text-align: center;
+ 
     }
     nav ul li ul {
         display: none;
         position: absolute;
         background-color: #232323;
         border-radius: 0px 0px 8px 8px;
+        box-align: center;
     }
     nav ul li:hover ul {
         display: block;
+        box-align: center;
     }
     nav ul li ul li {
         width: 180px;
         border-radius: 4px;
-    }
+        text-align: center;
+    }   
     nav ul li ul li {
         width: 180px;
+        text-align: center;
     }
     nav ul li ul li a {
         padding: 24px 14px;
+        text-align: center;
     }
     nav ul li ul li a:hover {
         background-color: #353535;
         border-radius: 0px 0px 8px 8px;
+        text-align: center;
     }
     nav {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -47,11 +54,37 @@ nav ul {
         height: 60px; background-color: #232323;
     }
     nav p {
-        font-family: Calibri, sans-serif;
+        font-family: Trebuchet MS, sans-serif;
         Border: 5px #C98BFE;
         color: #C98BFE;
         font-size: 24px;
         line-height: 55px;
         float: left;
-        padding: 0px 35px
+        position:relative; 
+        left: 30px;
+    
     }
+    @media only screen and (max-width: 767px) {
+        nav p {
+           font-size: .8rem;
+       }
+       p {
+        font-size: .8rem;
+    }
+    nav ul li a {
+        font-size: .6rem;
+        padding: 24px 20px;
+    }
+    }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+       nav p {
+           font-size: 1rem;
+           }
+    p {
+        font-size: 1rem;
+    }
+    nav ul li a {
+        font-size: .8rem;
+        padding: 24px 25px;
+    }
+}
