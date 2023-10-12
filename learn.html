@@ -2,34 +2,71 @@
 <!--Chase Ambrose islt_7310 / Learn page, wherer the main content is held. Complete with separate tabs for each chapter-->
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>Learn</title>
-               <link href="style.css" rel="stylesheet">
-               <link href="nav.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
+    <div id="page-container">
+        <div id="content-wrap">
     <header>
-        <nav>
-            <p>After Effects Basics</p>
-            <ul>
-           <li><a href="learn.html">Learn</a>
-               <ul>
-                   <li><a href="#">Link 1</a></li>
-                   <li><a href="#">Link 2</a></li>
-                   <li><a href="#">Link 3</a></li>
-                   <li><a href="#">Link 4</a></li>
-               </ul>
-           <li><a href="contact.html">Contact</a>
-           <li><a href="resources.html">Resources</a>
-           <li><a href="about.html">About</a>
-           <li><a href="index.html">Home</a>
-           </ul>
-           </nav>
-        </header>
+        <p>After Effects Basics</p>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+    <ul>
+        <li class="active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="learn.html">Learn</a>
+            <ul id="mobileHide">
+                <li><a href="ui.html">User Interface</a></li>
+                <li><a href="effectspresets.html">Effects and Presets</a></li>
+                <li><a href="keyframing.html">Keyframing</a></li>
+                <li><a href="rendering.html">Rendering</a></li>
+            </ul>
+    </li>
+    </ul>
+    </nav>
+    </header>
+    </body>
       <main>
+          </style>
+          </head>
+          <body>
+            <h2 style="text-align: center; margin-top: 300px;">Table of Contents</h2>
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                    <tr>
+                        <th>Chapter 1</th>
+                        <th>Chapter 2</th>
+                        <th>Chapter 3</th>
+                        <th>Chapter 4</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>User Interface</td>
+                        <td>Effects and Presets</td>
+                        <td>Keyframes</td>
+                        <td>Rendering</td>
+                    </tr>
+                    </tr>
+                    <tbody>
+                </table>
+            </div>
       </main>
+    </div>
+    <footer id="footer"></footer>
     <footer>
-        <p>Chase Ambrose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ca3fc@umsystem.edu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Copyright 2023, Ambrose inc. All rights reserved.</p>
-    </footer>
+        <p><img style='display:inline;' src="./phone.png" width="10px" height="10px"> 816-298-4456&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img style='display:inline;' src="./email.png" width="10px" height="10px"> <a href="mailto:ca3fc@umsystem.edu?Subject=Website%20Contact" target="_top">
+          ca3fc@umsystem.edu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Copyright 2023, Ambrose inc. All rights reserved.</p>
+      </footer>
+      <div>
 </body>
 </html>
