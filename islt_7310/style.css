@@ -50,6 +50,9 @@ body {
     background-image: url("./background.png");
     background-color: #000000;
     max-height: 180px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
 h1 {
@@ -113,22 +116,13 @@ p a {
     font-family: 'Trebuchet MS', sans-serif;
     color: #FFFFFF;  
 }
-  .page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  .content-wrap {
-    padding-bottom: 0px;    /* Footer height */
-  }
-  
   footer {
-    position: absolute;
+    background-image: url("./footer.jpg");
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    text-align: center;            /* Footer height */
-    background-image: url("./footer.jpg");
+    text-align: center;
   }
   footer p img:hover { 
         transition: 0.5s;
@@ -231,7 +225,7 @@ p a {
 }
       
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         width: 100%;
         height: 20px;
