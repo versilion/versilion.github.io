@@ -1,90 +1,133 @@
-
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif
+}
+html {font-family: 'Trebuchet MS', sans-serif}
+header {
+    width: 100%;
+    background: #1f1f1f
+}
+#hamburger {
+    display: none;
+}
+header p {
+    font-family: Calibri, sans-serif;
+    color:  #CF96FD;
+    font-size: 24px;
+    line-height:49px;
+    float: left;
+    padding: 0px 25px;
+    background: #303030
+}
 nav ul {
-    font-family: Trebuchet MS, sans-serif;
-    float: right;
-    }
-    nav ul li {
-        float: right;
-        list-style: none;
-        position: relative; 
-    }
+    display: flex;
+    justify-content:flex-end;
+    max-width:1200px;
+    margin-left: 800px;
+    padding: 0;
+}
+nav>ul li {
+    list-style: none;
+    position: relative;
+    padding:15px 45px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+nav>ul>li:hover {
+    background: #303030
+}
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: #00a2ff;
+    transition: 0.5s;
+}
 
-    nav ul li a {
+nav ul>li ul {
+    position: absolute;
+    top: 49px;
+    background: #1f1f1f;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    left: 0px;
+}
+nav ul>li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    background: #303030
+}
+nav ul ul li {
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: relative;
+        height: 50px;
         display: block;
-        font-family: Trebuchet MS, sans-serif;
-        color: #39B4FF;
-        font-size: 18px;
-        line-height: 10px;
-        padding: 24px 100px;
-        text-align: center;
- 
+        background-color: #1f1f1f;
+        width: 100%;        
+
+	}
+	#hamburger {
+		display: inline-block;
+        padding-left: 20px;
+        padding-top: 0px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: relative;
+		top: 50px;
+        width: 100%;
+        background: #1f1f1f;
+        margin-left: 0px;
+			}
+	nav:hover ul {
+		display: block;
+	}
+    	nav:hover #mobileHide {
+		display: block;
+        background: #303030
+	}
+
+nav a {
+    text-decoration: none;
+    display:block;
+    border-bottom: none;
+    height: 15px;
+    text-align: left;
+}
+	nav li {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+        width: 100%;
+	}
+    nav>ul li {
+    display: block;
     }
     nav ul li ul {
-        display: none;
-        position: absolute;
-        background-color: #232323;
-        border-radius: 0px 0px 8px 8px;
-        box-align: center;
-    }
-    nav ul li:hover ul {
-        display: block;
-        box-align: center;
-    }
-    nav ul li ul li {
-        width: 180px;
-        border-radius: 4px;
-        text-align: center;
-    }   
-    nav ul li ul li {
-        width: 180px;
-        text-align: center;
-    }
-    nav ul li ul li a {
-        padding: 24px 14px;
-        text-align: center;
-    }
-    nav ul li ul li a:hover {
-        background-color: #353535;
-        border-radius: 0px 0px 8px 8px;
-        text-align: center;
-    }
-    nav {
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
         width: 100%;
-        height: 60px; background-color: #232323;
+        z-index: 1;
     }
-    nav p {
-        font-family: Trebuchet MS, sans-serif;
-        Border: 5px #C98BFE;
-        color: #C98BFE;
-        font-size: 24px;
-        line-height: 55px;
-        float: left;
-        position:relative; 
-        left: 30px;
-    
-    }
-    @media only screen and (max-width: 767px) {
-        nav p {
-           font-size: .8rem;
-       }
-       p {
-        font-size: .8rem;
-    }
-    nav ul li a {
-        font-size: .6rem;
-        padding: 24px 20px;
-    }
-    }
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-       nav p {
-           font-size: 1rem;
-           }
-    p {
-        font-size: 1rem;
-    }
-    nav ul li a {
-        font-size: .8rem;
-        padding: 24px 25px;
+    header p {
+        display: none
     }
 }
+
+
+
+
+
+
+
+

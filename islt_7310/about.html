@@ -3,38 +3,43 @@
 <html lang="en-US">
 <head>
 
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0,">
-            <title>About Me</title>
-            <link href="style.css" rel="stylesheet">
-            <link href="nav.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <title>About</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet" type="text/css">
 </head>
 <body>
- <header>
-     <nav>
-         <p>After Effects Basics</p>
-         <ul>
-        <li><a href="learn.html">Learn</a>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+    <div id="page-container">
+        <div id="content-wrap">
+    <header>
+        <p>After Effects Basics</p>
+    <nav>
+        <label id="hamburger">&#9776;</label>
+    <ul>
+        <li class="active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="learn">Learn</a>
+            <ul id="mobileHide">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
             </ul>
-        <li><a href="contact.html">Contact</a>
-        <li><a href="resources.html">Resources</a>
-        <li><a href="about.html">About</a>
-        <li><a href="index.html">Home</a>
-        </ul>
-        </nav>
-        </header>
+    </li>
+    </ul>
+    </nav>
+    </header>
         <div class="grid-container">
         <div class="grid-item10">
             <h1>Chase Ambrose</h1>
             </div>
         <div class="grid-item11">
-            <img src="./headshot.PNG" style="margin-top:80px;" >
-            <iframe width="420" height="250"
+            <img src="./headshot.PNG" alt="headshot;" style="margin-top:80px;" width= 300px; height= 300px; >
+            <iframe width="300" height="200"
                 src="https://www.youtube.com/embed/_SuoLkUZCqs" style="margin-top:80px;">
                 </iframe>
             </div>
@@ -59,19 +64,19 @@
                     This educational journey has been a progression from high school, through specialized training <br> in automotive technology, 
                     to pursuing a higher education degree,allowing me to combine my technical <br> skills and academic knowledge for a well-rounded education.</p>
                 </div>  
-                </main>
         <div class="grid-item14">
                 <p style="margin-left:80px;"><a href ="./ambrose%20resume.pdf"> My Resume </a></p>
                 </div>
         <div class="grid-item15">
                 <blockquote><em>"The worst enemy to creativity is self-doubt.”</em></blockquote>
                 </div>
-        <div class="grid-item16">
-        <footer id="footer"></footer>
-                <footer>
+            </main>
+            <footer id="footer"></footer>
+            <footer>
                 <p>Chase Ambrose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ca3fc@umsystem.edu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Copyright 2023, Ambrose inc. All rights reserved.</p>
-                </footer>
-                </div>
-                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
         </body>
         </html>
