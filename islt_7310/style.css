@@ -282,10 +282,19 @@ p a {
   }
 
 @media only screen and (max-width: 640px) {
+    .main-block {
+        display: block;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    align-items: right;
+    min-height: 100vh;
+    }
     .grid-item2 {
         width: 500px;
         height: 300px;
     }
+    
     .content-wrap {
         padding-bottom: .2rem;    /* Footer height */
 }
