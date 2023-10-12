@@ -2,13 +2,52 @@
     margin: 0;
     padding: 0;
 }
-main {
-    min-width: 100%;
-    width: 100%;
-  }
+@media print {
+    nav {
+        display: none;
+    }
+    iframe {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .grid-item14 {
+        display: none;
+    }
+    .grid-item15 {position:relative;
+        font-family:'Times New Roman', Times, serif;
+        color: rgb(0, 0, 0); 
+        padding-bottom: 500px;
+        text-align: center;
+    }
+    p, h1, h2, h3, blockquote  {
+        color: #000 !important;
+    }
+    body {
+        font-family: 'Titillium Web', sans-serif;
+        font-size:8pt;
+        line-height:8pt;
+        color: #000 !important;
+        background: none;
+
+    }
+     footer {
+       background: none;
+       width: 100%;
+       border: none;
+       padding: 0;
+       margin: 0;
+       color: #000;
+}
+}
+@font-face {
+    font-family: 'Titillium Web', sans-serif;
+    src: url(./TitilliumWeb-Regular.ttf);
+}
 body {
     background-image: url("./background.png");
-    background-color: #313131;
+    background-color: #000000;
     max-height: 180px;
   }
 
@@ -25,8 +64,7 @@ h4 {
     padding: 10px;
       }
 p { text-indent: -10px }
-main p:first-line { text-indent: 0 }
-main p::first-letter { color: rgb(255, 255, 255) }            
+main p:first-line { text-indent: 0 }          
 
 p {
     font-family: 'Trebuchet MS', sans-serif;
@@ -34,12 +72,12 @@ p {
     padding-top: 10px;
 }
 h2 {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     color: #FFFFFF;
     padding: 5px 0px;
 }
 h3 {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     color: #FFFFFF;
     padding: 20px 20px;
 }
