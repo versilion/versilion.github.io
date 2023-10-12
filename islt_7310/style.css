@@ -130,6 +130,10 @@ p a {
     text-align: center;            /* Footer height */
     background-image: url("./footer.jpg");
   }
+  footer p img:hover { 
+        transition: 0.5s;
+        transform: scale(1.5); 
+      }
   .grid-container {
     display: grid;
     grid-template-rows: auto auto auto;
